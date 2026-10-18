@@ -1,5 +1,5 @@
 <div align="center"><a href="https://raspino.org">
-  <img src="/resources/images/raspino.png" alt="Raspino Logo" width="260"></a>
+  <img src="profile/resources/images/raspino.png" alt="Raspino Logo" width="260"></a>
 </div>
 <br>  
 
