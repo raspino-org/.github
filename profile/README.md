@@ -37,7 +37,7 @@ Die Raspino Open-Source-Initiative und ihre Repositories stehen in keiner Verbin
 
 
 ** 🇬🇧 **
-Raspino is a pending trademark and belongs to the community. Any use of the name is subject to our trademark guidelines.  
+Raspino is a protected trademark and belongs to the community. Use of the name is subject to our trademark guidelines.  
 
 ⚠️ Important Notice (Disclaimer):  
 The software is provided "as is" and without any express or implied warranty. Use of the code and hardware controls is entirely at your own risk.
