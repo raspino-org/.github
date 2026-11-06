@@ -1,9 +1,13 @@
 <div align="center"><a href="https://raspino.org">
   <img src="resoures/images/raspino.png" alt="Raspino Logo" width="260"></a>
 </div>
+<br>
+<div align="center">C++ on the Raspberry Pi, as easy as Arduino.</div>
+<br><br>
+<a href="https://github.com/raspino-org/gpiodWrap"><sub>gpiodWrap</sub></a>  <a href="https://github.com/raspino-org/gpiodWrapV1"><sub>gpioWrapV1</sub></a>
 <br>  
 
-
+---
 📢 gpiodWrapV1 [v0.1.0] — Official Release
 
 Our new flagship, <a href="https://github.com/raspino-org/gpiodWrapV1">gpioWrapV1</a> [v0.1.0], is now officially available in its inaugural version. While we continue to develop gpiodWrap [v2.0] in parallel, V1 offers a powerful preview of the architectural direction we are heading.
@@ -14,7 +18,7 @@ The result is direct, safe, and predictable access to the hardware registers in 
 I look forward to hearing your opinions and suggestions.
 
 ---
-**esp32 vs gpiod-v2**
+🚀 esp32 vs gpiod-v2
 
 No, it wasn’t a case of working against each other; it was a case of working together.
 I’ve conducted a few tests and would like to share them with you.  
