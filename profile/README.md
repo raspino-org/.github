@@ -17,8 +17,8 @@ Raspino provides the framework for our open-source repositories on GitHub. We ma
 
 ## 📚 Raspino Repositories
 **Public**  
-- <a href="https://github.com/raspino-org/gpiodWrap">gpiodWrap</a>
-- <a href="https://github.com/raspino-org/">gpioWrapV1</a>
+- <a href="https://github.com/raspino-org/gpiodWrap">gpiodWrap</a>&nbsp; &nbsp; &nbsp;<sub>Works with libgpiod 2.x<sub>
+- <a href="https://github.com/raspino-org/gpiodWrapV1">gpioWrapV1</a> &nbsp;&nbsp;<sub>Works with libgpiod 1.6.x<sub>
 - <a href="https://github.com/raspino-org/mcp23017" alt="mcp23017">mcp23017</a>
 
 **Comming soon**  
@@ -28,7 +28,7 @@ Raspino provides the framework for our open-source repositories on GitHub. We ma
 
 ## ⚖️ Disclaimer
 ** 🇩🇪 **
-Raspino ist eine geschützte Marke und gehört der Community. Die Verwendung des Namens unterliegt unseren Markenrichtlinien.  
+Raspino ist eine zum Schutz angemeldete Marke und gehört der Community. Die Verwendung des Namens unterliegt unseren Markenrichtlinien.  
 
 ⚠️ Wichtige Hinweise (Haftungsausschluss):
 Die Bereitstellung der Software erfolgt "wie besehen" (as is) und ohne jegliche ausdrückliche oder implizite Gewährleistung. Die Nutzung des Codes und der Hardware-Ansteuerungen erfolgt vollständig auf eigene Gefahr.  
@@ -37,10 +37,10 @@ Die Raspino Open-Source-Initiative und ihre Repositories stehen in keiner Verbin
 
 
 ** 🇬🇧 **
-Raspino is a protected trademark and belongs to the community. Use of the name is subject to our trademark guidelines.  
+Raspino is a trademark filed for protection trademark and belongs to the community. Use of the name is subject to our trademark guidelines.  
 
 ⚠️ Important Notice (Disclaimer):  
-The software is provided "as is" and without any express or implied warranty. Use of the code and hardware controls is entirely at your own risk.
+The software is protection "as is" and without any express or implied warranty. Use of the code and hardware controls is entirely at your own risk.
 
 The Raspino Open-Source Initiative and its repositories are not affiliated with the Raspberry Pi Foundation or Arduino AG. This is an independent development and is neither sponsored, endorsed, nor authorized by the aforementioned brands. All brand names and trademarks used are the property of their respective owners and are used here solely for reference or comp
 arison purposes.
