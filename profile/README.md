@@ -3,6 +3,19 @@
 </div>
 <br>  
 
+
+📢 gpiodWrapV1 [v0.1.0] — Official Release
+
+Our new flagship, <a href="https://github.com/raspino-org/gpiodWrapV1">gpioWrapV1</a> [v0.1.0], is now officially available in its inaugural version. While we continue to develop gpiodWrap [v2.0] in parallel, V1 offers a powerful preview of the architectural direction we are heading.
+As a hardware-oriented wrapper, raw performance is paramount. Consequently, we have entirely eliminated the use of maps and vectors. Our concern is not with the data structures themselves, but rather with preventing frequent heap allocations—which we aim to eliminate entirely from the hot paths.
+By allocating a dedicated, fixed memory region for each GPIO line, the framework requires no additional runtime memory allocation. This architectural choice yields significant advantages: the CPU can rapidly access optimized structures that are fetched into the cache in a single operation, bypassing the overhead and complex pointer manipulation typically involved in dynamic lookups.
+The result is direct, safe, and predictable access to the hardware registers in just a few CPU clock cycles.
+
+I look forward to hearing your opinions and suggestions.
+
+
+
+---
 🇩🇪 **C++ auf dem Raspberry Pi, so einfach wie Arduino**
 
 Raspino bildet den Rahmen für unsere Open-Source-Repositories auf GitHub. Wir machen die hardwarenahe Programmierung mit C++ auf dem Raspberry Pi zugänglich, unkompliziert und direkt. 
