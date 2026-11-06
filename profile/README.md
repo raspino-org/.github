@@ -21,7 +21,7 @@ I’ve conducted a few tests and would like to share them with you.
 
 Test setup: an ESP32 sends a signal with a period of one microsecond to an event line on my Raspberry Pi 5. The `gpioWrap` callback then forwards these edges to a pin configured as an output. The offset between the two oscilloscope channels (monitoring the ESP32 and the Pi 5 output) is 23 microseconds. To make things a bit more interesting, I also maxed out `stress-ng --cpu` across all cores. There is no jitter and no change in the offset.  
 
-Take a look at the images—the results are fantastic.  
+Take a look at the images the results are fantastic.  
 
 <img src="resoures/benchmarks/espvsgpiod/DS1Z_QuickPrint14.png" alt="Raspino Logo" width="260">
 <img src="resoures/benchmarks/espvsgpiod/DS1Z_QuickPrint17.png" alt="Raspino Logo" width="260">
