@@ -17,12 +17,12 @@ Raspino provides the framework for our open-source repositories on GitHub. We ma
 
 ## 📚 Raspino Repositories
 **Public**  
-- <a href="https://github.com/dsmurph/gpiodWrap">gpiodWrap</a>  
-- <a href="https://github.com/dsmurph/mcp23017" alt="mcp23017">mcp23017</a>
+- <a href="https://github.com/raspino-org/gpiodWrap">gpiodWrap</a>
+- <a href="https://github.com/raspino-org/">gpioWrapV1</a>
+- <a href="https://github.com/raspino-org/mcp23017" alt="mcp23017">mcp23017</a>
 
 **Comming soon**  
 - RaspinoCore
-- gpioWrapV1
   
 ---
 
