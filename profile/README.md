@@ -27,6 +27,61 @@ Take a look at the images the results are fantastic.
 <img src="resoures/benchmarks/espvsgpiod/DS1Z_QuickPrint17.png" alt="Raspino Logo" width="260">
 <img src="resoures/benchmarks/espvsgpiod/stress-ng.PNG" alt="Raspino Logo" width="260">  
 
+gpiodWrap:
+```
+#include <iostream>
+#include <chrono>
+#include <thread>
+#include <atomic>
+
+
+#include "../../include/gpiodWrap-1.2.3_benchmark.hpp"
+
+
+gpiodWrap gpio;
+using namespace gpiodwrap;
+
+std::atomic<bool> pin_state{false};
+
+int main() {
+
+
+    gpio.configurePin(23, OUTPUT);
+    gpio.bindInterrupt(17, PULLUP, BOTH);
+
+    gpio.watchInterrupt(17, [&]{
+        bool newState = !pin_state.load(std::memory_order_relaxed);
+        pin_state.store(newState, std::memory_order_relaxed);
+        gpio.setPin(23, newState ? HIGH : LOW);
+    });
+
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    }
+
+    gpio.closeChip();
+
+    return 0;
+}
+```
+
+ESP32:
+```
+const int PIN = 2;
+
+void setup() {
+    pinMode(PIN, OUTPUT);
+    digitalWrite(PIN, LOW);
+}
+
+void loop() {
+    digitalWrite(PIN, HIGH);
+    delayMicroseconds(500);
+    digitalWrite(PIN, LOW);
+    delayMicroseconds(500);
+} 
+```
+
 ---
 🇩🇪 **C++ auf dem Raspberry Pi, so einfach wie Arduino**
 
