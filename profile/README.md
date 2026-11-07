@@ -8,6 +8,25 @@
 <br>  
 
 ---
+gpioWrapV1 [v0.1.1] — Hotfix Release
+
+Fixed `getPinChange` initialization bug:  
+Upon application startup, an initial level change is no longer incorrectly signaled when a pin is stable at its default level.
+The function now silently synchronizes with the pin's current hardware state upon its very first invocation.
+An event is triggered only when an actual level change occurs after startup.  
+
+System-wide API protection:  
+The `validRequest` guard clause has been consistently implemented across all I/O paths (`setPin`, `getPin`, `getPinChange`, `configurePin`).
+Invalid pin offsets and missing chip file descriptors are intercepted immediately at the function entry point, effectively preventing memory access errors (segfaults) and undefined behavior throughout the system.  
+
+CMakeLists:  
+Structured generation of binary files within the output directory.
+Implementation of `getPinChange` initialization and synchronization:
+Introduced a structure to track level changes using C++ bitfields.
+The current state (`current`) and the initialization flag (`received`) together occupy **only 2 bits** of memory.
+Consequently, the entire `line_change` array for all available GPIO lines consumes only a minimal number of bytes in RAM, ensuring maximum CPU cache efficiency and eliminating any heap overhead.
+
+---
 📢 gpiodWrapV1 [v0.1.0] — Official Release
 
 Our new flagship, <a href="https://github.com/raspino-org/gpiodWrapV1">gpioWrapV1</a> [v0.1.0], is now officially available in its inaugural version. While we continue to develop gpiodWrap [v2.0] in parallel, V1 offers a powerful preview of the architectural direction we are heading.
