@@ -8,7 +8,7 @@
 <br>  
 
 ---
-gpioWrapV1 [v0.1.1] — Hotfix Release
+🚨 gpioWrapV1 [v0.1.1] — Hotfix Release
 
 Fixed `getPinChange` initialization bug:  
 Upon application startup, an initial level change is no longer incorrectly signaled when a pin is stable at its default level.
