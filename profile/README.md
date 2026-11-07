@@ -26,6 +26,8 @@ Introduced a structure to track level changes using C++ bitfields.
 The current state (`current`) and the initialization flag (`received`) together occupy **only 2 bits** of memory.
 Consequently, the entire `line_change` array for all available GPIO lines consumes only a minimal number of bytes in RAM, ensuring maximum CPU cache efficiency and eliminating any heap overhead.
 
+<div align="center"><a href="https://github.com/raspino-org/gpiodWrapV1/releases/tag/v0.1.1">gpioWrapV1 [v0.1.1]</a></div>
+
 ---
 📢 gpiodWrapV1 [v0.1.0] — Official Release
 
