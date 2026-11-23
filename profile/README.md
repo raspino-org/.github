@@ -1,5 +1,5 @@
 <div align="center"><a href="https://raspino.org">
-  <img src="resoures/images/raspino.png" alt="Raspino Logo" width="260"></a>
+  <img src="../profile/resources/logo/raspino.png" alt="Raspino Logo" width="260"></a>
 </div>
 <br>
 <div align="center">C++ on the Raspberry Pi, as easy as Arduino.</div>
