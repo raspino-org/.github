@@ -15,9 +15,9 @@ Raspino offers a lightweight, deterministic C++ framework for low-level hardware
 ## 📚 Repositories
 
 ### Public Libraries
-* **[gpiodWrap](https://github.com)** - High performance C++ wrapper for **libgpiod v2.x** *(v2.0.0 release coming soon)*
-* **[gpiodWrapV1](https://github.comV1)** - Lightweight, zero-heap C++17 wrapper for **libgpiod v1.6.x**
-* **[mcp23017](https://github.com)** - Simple C++ class to control the 16-channel MCP23017 I2C GPIO expander
+* **[gpiodWrap](https://github.com/raspino-org/gpiodWrap)** - High performance C++ wrapper for **libgpiod v2.x** *(v2.0.0 release coming soon)*
+* **[gpiodWrapV1](https://github.com/raspino-org/gpiodWrapV1)** - Lightweight, zero-heap C++17 wrapper for **libgpiod v1.6.x**
+* **[mcp23017](https://github.com/raspino-org/mcp23017)** - Simple C++ class to control the 16-channel MCP23017 I2C GPIO expander
 
 ### In Development
 * **RaspinoCore** *(Coming Soon)* - Lightweight C++ web interface and device control framework for the Raspberry Pi
